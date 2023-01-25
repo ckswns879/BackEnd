@@ -15,22 +15,15 @@ import com.ruby.paper.service.DataService;
 @RestController
 public class DataController {
 
-	@Autowired
+	
 	private DataService ds;
 	
-	public DataController() {
+	@Autowired
+	public DataController(DataService ds) {
 //		ds = new DataService();
+		this.ds = ds;
 		System.out.println("DataController() 생성자가 호출됨");
 	}
-	
-	
-	
-	@RequestMapping(value = "/data/hello.json")
-	public String helloworld(Model model) {
-		return "hello world";
-	}
-	
-	
 	
 	@GetMapping("/data")
 	public List<DataVO> getList(){

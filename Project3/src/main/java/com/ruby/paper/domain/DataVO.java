@@ -5,7 +5,7 @@ import org.springframework.stereotype.Repository;
 @Repository
 public class DataVO {
 
-	private String car_num; //차량번호
+	private String car_num; //차량번호 ㅎㅇㅎㅇ
 	private int distance; //운행거리
 	private int distance_cum; //누적운행거리
 	private double speed_av; //평균운행속도

@@ -47,7 +47,6 @@ public class DataDao implements DataInterface {
 		} catch (Exception e) {
 			ret.put("data", null);
 		}
-		System.out.println("DataDAO");
 		return ret;
 	}
 
